@@ -21,6 +21,14 @@ layout: default
         background: rgba(0,0,0, {{ page.header-mask }});
     }
     {% endif %}
+    {% if page.navcolor == "invert" %}
+        .navbar-custom .nav li a,
+        .navbar-custom .nav li a:hover,
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-brand:hover {color:#777;}
+        .navbar-default .navbar-toggle .icon-bar {background-color:#777;}
+        .intro-header .page-heading { color: black;}
+    {% endif %}
 </style>
 <header class="intro-header" >
     <div class="header-mask"></div>
