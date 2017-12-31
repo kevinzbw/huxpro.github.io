@@ -4,28 +4,11 @@ layout: default
 
 <!-- Page Header -->
 <style type="text/css">
-    header.intro-header{
-        /*background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')*/
-        height: 500px;
-        overflow: hidden;
-    }
-    header iframe{
-        width: 100%;
-        height: 100%;
-        border: 0;
-    }
     /* Override Nav Style */
-    {% if page.navcolor == "invert" %}
-        .navbar-custom .nav li a,
-        .navbar-custom .nav li a:hover,
-        .navbar-custom .navbar-brand,
-        .navbar-custom .navbar-brand:hover {color:#777;}
-        .navbar-default .navbar-toggle .icon-bar {background-color:#777;}
-        .intro-header .site-heading,
-        .intro-header .page-heading {
-            color: #404040;
-        }
-    {% endif %}
+    .intro-header .site-heading,
+    .intro-header .page-heading {
+        text-shadow: 2px 2px 4px black
+    }
 </style>
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
